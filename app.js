@@ -14,7 +14,7 @@ app.post("/api/login", (req, res) => {
   jwt.sign({ user }, "secretKey", {expiresIn: "32s"},(err, token) => {
     res.json({
       token,
-    });
+    }); 
   });
 });
 
